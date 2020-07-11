@@ -1,7 +1,5 @@
 pipeline {
-  agent {
-    label 'jenkins-python'
-  }
+  agent any
   stages {
     stage('Initialize') {
       when {
