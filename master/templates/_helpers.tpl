@@ -173,8 +173,8 @@ jobs:
           branchSources {
               github {
                   id('0') // IMPORTANT: use a constant and unique identifier
-                  repoOwner('khemchandanib')
-                  repository('jenkins-seed')
+                  repoOwner('snehawadhwa')
+                  repository('jenkins-casc')
                   scanCredentialsId('github')
                   triggers {
                       cron('H/5 * * * *')
