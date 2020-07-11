@@ -1,13 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage('Initialize') {
-            when {
-                branch "master"
-            }
-            steps {
-                sh 'echo Hello World'
-            }
-        }
+  agent {
+    label: 'jenkins-python'
+  }
+  stages {
+    stage('Initialize') {
+      when {
+        branch "master"
+      }
+      steps {
+        sh 'echo Hello World'
+      }
     }
+  }
 }
